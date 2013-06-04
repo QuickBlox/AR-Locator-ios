@@ -107,8 +107,8 @@
     if(![self.navigationItem.titleView isKindOfClass:UISegmentedControl.class]){
         NSArray *segments;
         if([ARManager deviceSupportsAR]){
-            segments = [NSArray arrayWithObjects:NSLocalizedString(@"Radar", nil), 
-                                                    NSLocalizedString(@"Map", nil), nil];
+            segments = [NSArray arrayWithObjects:NSLocalizedString(@"Map", nil), 
+                                                    NSLocalizedString(@"Radar", nil), nil];
         }else{
             segments = [NSArray arrayWithObjects:NSLocalizedString(@"Map", nil), nil];
         }
@@ -179,20 +179,16 @@
 
 - (void)segmentValueDidChanged:(id)sender{
     switch (segmentControl.selectedSegmentIndex) {
-            // show Radar / Map
+            // show Map
         case 0:
-            if(segmentControl.numberOfSegments == 1){
-                [self showMap];
-            }else{
-                [self showRadar];
-            }
+            [self showMap];
             
             break;
             
-            // show Map / Chat
+            // show Radar
         case 1:
             
-            [self showMap];
+            [self showRadar];
             
             break;
             

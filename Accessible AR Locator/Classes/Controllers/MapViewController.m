@@ -211,7 +211,6 @@
     
     if ([annotation isKindOfClass:[UserAnnotation class]]) {
 
-        NSLog(@" TESTTTTT   %f %f", [annotation coordinate].latitude, [annotation coordinate].longitude);
         static NSString* myIdentifier = @"UserAnnotationIndentifier";
         MKPinAnnotationView* pinView = (MKPinAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:myIdentifier];
         
