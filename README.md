@@ -4,9 +4,9 @@ It it designed by [QuickBlox](http://quickblox.com/) with support from [Barclays
 [Accessibility Hackathon](http://www.accessibilityhack.com/) initiavtive.
 
 
-![Accessible Bank Branch Locator for iOS](http://image.quickblox.com/5aa7c80533a63b8186541d10d95d.injoit.png) ![Accessible Locator: Map view](http://image.quickblox.com/3991b91e7e231e5f17ddacdcfea5.injoit.png)
+![Accessible Bank Branch Locator for iOS](http://image.quickblox.com/5aa7c80533a63b8186541d10d95d.injoit.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Accessible Locator: Map view](http://image.quickblox.com/3991b91e7e231e5f17ddacdcfea5.injoit.png)
 
-![Accessible Locator: Augmented Reality view](http://image.quickblox.com/64c24120948dc072d126a52e2758.injoit.png) ![Accessible Locator: iOS 6 Maps Navigation](http://image.quickblox.com/721c380b3abbd0bf04ce9dfc131b.injoit.png)
+![Accessible Locator: Augmented Reality view](http://image.quickblox.com/64c24120948dc072d126a52e2758.injoit.png) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ![Accessible Locator: iOS 6 Maps Navigation](http://image.quickblox.com/721c380b3abbd0bf04ce9dfc131b.injoit.png)
 
 
 <h3>Important - how to build your own Accessible Locator enabled app</h3>
