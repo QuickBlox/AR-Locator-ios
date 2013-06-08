@@ -231,8 +231,6 @@
  */
 - (UIView *)viewForAnnotation:(PlaceAnnotation *)placeAnnotation{
     ARMarkerView *marker = [[[ARMarkerView alloc] initWithGeoPoint:placeAnnotation] autorelease];
-    marker.target = delegate;
-    marker.action = @selector(touchOnMarker:);
     return marker;
 }
 
@@ -348,6 +346,7 @@
 		adjustment = degreesToRadian(180);
     
 	self.centerCoordinate.azimuth = latestHeading - adjustment;
+    
 	[self updateLocations];
 }
 
@@ -426,7 +425,7 @@
 {
     int index			= 0;
 
-    if([self.coordinates count]){
+     if([self.coordinates count]){
         for (ARGeoCoordinate *geoLocation in self.coordinates) 
         {
 		
@@ -491,7 +490,7 @@
 
 		if ([self viewportContainsView:viewToDraw forCoordinate:item] && (viewToDraw.distance < switchedDistance)) {
 			
-            // mraker location
+            // marker location
 			CGPoint locCenter = [self pointInView:self.displayView withView:viewToDraw forCoordinate:item];
             
 			CGFloat scaleFactor = 1.0;

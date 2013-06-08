@@ -236,9 +236,6 @@
             [marker updateAnnotation:(PlaceAnnotation *)annotation];
         }
         
-        // set touch action
-        marker.target = delegate;
-        marker.action = @selector(touchOnMarker:);
         
         if (IS_IOS_6) {
             [marker setTransform:CGAffineTransformMakeRotation(0.001)];
