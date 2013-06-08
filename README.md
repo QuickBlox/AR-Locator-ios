@@ -21,7 +21,7 @@ Note: you can also watch our [video turotial](http://youtu.be/AgJZYBoxKz0) on Yo
 ![App credentials](http://image.quickblox.com/592aa599660a52a97be4e478e3e6.injoit.png)
 
 6) copy credentials (App ID, Authorization key, Authorization secret) into your project code in "Accessible AR Locator / AppDelegate.m" <br />
-7) Go to QuickBlox admin panel -> Location module whenever you want to add / remove / edit POIs<br />:
+7) Go to QuickBlox admin panel -> Location module whenever you want to add / remove / edit POIs:<br />
 
 ![Manage POIs from your cloud backend admin panel](http://image.quickblox.com/de1e399b36e0efcd268d28a4cbf6.injoit.png)
 
