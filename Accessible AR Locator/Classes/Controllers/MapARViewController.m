@@ -151,7 +151,6 @@
     [super viewWillAppear:animated];
     
     
-    [self initializeMap];
 
 }
 
@@ -171,6 +170,11 @@
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation {
     
+    if (!isInitialized) {
+
+        [self initializeMap];
+
+    }
     self.currentLocation = newLocation;
     
     [self.mapViewController centerOnLocation:newLocation];
@@ -267,6 +271,7 @@
 {
     
     // get map/ar points from cash
+    /*
     NSDate *lastPointDate = nil;
     NSArray *cashedMapARPoints = [[DataManager shared] mapARPointsFromStorage];
     if([cashedMapARPoints count] > 0){
@@ -277,7 +282,7 @@
             [self.allMapPoints addObject:mapARCashedPoint.body];
             [self.mapPointsIDs addObject:[NSString stringWithFormat:@"%d", ((PlaceAnnotation *)mapARCashedPoint.body).geoDataID]];
         }
-    }
+    }*/
     
     // If we have info from cashe - show them
     if([self.allMapPoints count] > 0){
